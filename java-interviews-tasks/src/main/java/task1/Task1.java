@@ -13,7 +13,7 @@ public class Task1 {
     Например, для {2,3,-1,5} обработка должна закончиться ошибкой.
      */
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         double[] a = new double[] {2, 1, 4, 2, 3};
         System.out.println(Arrays.toString(task(a)));
         a = new double[] {2,3,-1,5};
