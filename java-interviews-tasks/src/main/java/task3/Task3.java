@@ -13,7 +13,7 @@ public class Task3 {
 
     public static void myVariant(int n) {
         int ascii_num_shift = 48; // Числа в кодировке ASCII начинаются с этой позиции
-        for (int i = 0; i <= n; i+= 3) {
+        for (int i = 0; i <= n; i+= 3) { // Числа не кратные трем нет смысла рассматривать и их можно пропустить
             if (i % 5 != 0) {
                 String stringI = Integer.toString(i);
                 if (stringI.chars().sum() - ascii_num_shift * stringI.length() < 10) { // Учтем смещение кодировки и количество цифр
