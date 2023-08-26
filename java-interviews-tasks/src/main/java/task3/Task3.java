@@ -12,11 +12,11 @@ public class Task3 {
     }
 
     public static void myVariant(int n) {
-        int ascii_num_shift = 48;
+        int ascii_num_shift = 48; // Числа в кодировке ASCII начинаются с этой позиции
         for (int i = 0; i <= n; i+= 3) {
             if (i % 5 != 0) {
                 String stringI = Integer.toString(i);
-                if (stringI.chars().sum() - ascii_num_shift * stringI.length() < 10) {
+                if (stringI.chars().sum() - ascii_num_shift * stringI.length() < 10) { // Учтем смещение кодировки и количество цифр
                     System.out.println(i);
                 }
             }
