@@ -1,5 +1,8 @@
 package task6;
 
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+
 public class Task6 {
     /**
      У нас есть деревянная доска длиной n единиц.
